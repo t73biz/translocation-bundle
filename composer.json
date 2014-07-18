@@ -1,0 +1,26 @@
+{
+    "name": "t73biz/translation-bundle",
+    "description": "Translation Bundle for Symfony 2.5",
+    "autoload": {
+        "psr-0" : {
+            "Weaverryan\\DangerZone" : "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/t73biz/TranslationBundle"
+        }
+    ],
+    "require": {
+        "nikic/php-parser": "0.9.*@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ronald Chaplin",
+            "email": "rchaplin@t73.biz"
+        }
+    ],
+    "minimum-stability": "dev"
+}
