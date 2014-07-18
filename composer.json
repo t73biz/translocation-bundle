@@ -1,15 +1,15 @@
 {
-    "name": "t73biz/translation-bundle",
-    "description": "Translation Bundle for Symfony 2.5",
+    "name": "t73biz/translocation-bundle",
+    "description": "Translocation Bundle for Symfony 2.5",
     "autoload": {
         "psr-0" : {
-            "Weaverryan\\DangerZone" : "src"
+            "T73Biz\\TranslocationBundle" : "src"
         }
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/t73biz/TranslationBundle"
+            "url": "https://github.com/t73biz/translocation-bundle"
         }
     ],
     "require": {
