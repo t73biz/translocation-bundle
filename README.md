@@ -1,4 +1,4 @@
-TranslationBundle
+TranslocationBundle
 =================
 
-Symfony 2 Translation Bundle
+Symfony 2 Translocation Bundle
