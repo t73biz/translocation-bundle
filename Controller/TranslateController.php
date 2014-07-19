@@ -5,7 +5,7 @@
  * Copyright (c) 2014 Ronald Chaplin
  */
 
-namespace T73Biz\TranslocationBundle\Controller;
+namespace T73Biz\Bundle\TranslocationBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
