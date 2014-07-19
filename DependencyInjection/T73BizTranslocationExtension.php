@@ -6,7 +6,7 @@
  */
 
 
-namespace T73Biz\Bundle\TranslocationBundle\DependencyInjection;
+namespace T73Biz\TranslocationBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

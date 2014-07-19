@@ -5,7 +5,7 @@
  * Copyright (c) 2014 Ronald Chaplin
  */
 
-namespace T73Biz\Bundle\TranslocationBundle;
+namespace T73Biz\TranslocationBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -5,7 +5,7 @@
  * Copyright (c) 2014 Ronald Chaplin
  */
 
-namespace T73Biz\Bundle\TranslocationBundle\DependencyInjection;
+namespace T73Biz\TranslocationBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
