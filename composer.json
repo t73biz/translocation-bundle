@@ -1,6 +1,6 @@
 {
     "name": "t73biz/translocation-bundle",
-    "description": "Translocation Bundle for Symfony 2.5",
+    "description": "Translocation Bundle for Symfony 2",
     "autoload": {
         "psr-0" : {
             "T73Biz\\TranslocationBundle" : "src"
@@ -19,7 +19,7 @@
     "authors": [
         {
             "name": "Ronald Chaplin",
-            "email": "rchaplin@t73.biz"
+            "email": "ron.g.chaplin@gmail.com"
         }
     ],
     "minimum-stability": "dev"
