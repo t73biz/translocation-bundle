@@ -25,7 +25,7 @@ class T73BizTranslocationExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
-        $configuration = new Configuration();
+        $configuration = new Configuration($container->getParameter('kernel.debug'));
         $config = $this->processConfiguration($configuration, $configs);
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));

@@ -13,15 +13,26 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 /**
  * Class TranslateController
+ * @Route("/translate")
  */
 class TranslateController extends Controller
 {
-    /**
-     * @Route("/translate")
-     * @Template()
-     */
-    public function indexAction($name)
-    {
-        return array('name' => $name);
-    }
+	/**
+	 * @Route("/")
+	 * @Template()
+	 */
+	public function indexAction()
+	{
+		return array();
+	}
+
+	/**
+	 * @Route("/configure")
+	 * @Template()
+	 */
+	public function configureAction()
+	{
+		return array();
+	}
+
 }

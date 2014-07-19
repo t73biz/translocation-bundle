@@ -11,13 +11,9 @@
 		}
 	],
     "require": {
-        "nikic/php-parser": "0.9.*@dev",
-		"sensio/generator-bundle": "*",
-		"symfony/console": "~2.0"
+        "nikic/php-parser": "0.9.*@dev"
 	},
 	"require-dev": {
-		"symfony/doctrine-bridge": "~2.2",
-		"doctrine/orm": "~2.2,>=2.2.3",
 		"twig/twig": "~1.11"
 	},
 	"autoload": {
@@ -26,5 +22,10 @@
 		}
 	},
 	"target-dir": "T73Biz/Bundle/TranslocationBundle",
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+	"extra": {
+		"branch-alias": {
+			"dev-master": "0.1.x-dev"
+		}
+	}
 }

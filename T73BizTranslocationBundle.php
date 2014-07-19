@@ -9,6 +9,10 @@ namespace T73Biz\Bundle\TranslocationBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
+/**
+ * Class T73BizTranslocationBundle
+ * @author Ronald Chaplin <ron.g.chaplin@gmail.com>
+ */
 class T73BizTranslocationBundle extends Bundle
 {
 }

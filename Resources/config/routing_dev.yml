@@ -1,0 +1,4 @@
+t73_biz_translocation:
+    resource: "@T73BizTranslocationBundle/Controller/"
+    type:     annotation
+    prefix:   /
