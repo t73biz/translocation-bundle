@@ -1,0 +1,8 @@
+.TransTable {
+	table-layout: fixed;
+}
+
+.TransHeader,
+.TransHeader span {
+	margin-left: 35px;
+}
