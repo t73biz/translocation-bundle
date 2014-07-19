@@ -1,26 +1,30 @@
 {
     "name": "t73biz/translocation-bundle",
     "description": "Translocation Bundle for Symfony 2",
-    "autoload": {
-        "psr-0" : {
-            "T73Biz\\TranslocationBundle" : "src"
-        }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/t73biz/translocation-bundle"
-        }
-    ],
+	"keywords": ["translate", "localization", "internationalization", "extraction"],
+	"type": "symfony-bundle",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Ronald Chaplin",
+			"email": "ron.g.chaplin@gmail.com"
+		}
+	],
     "require": {
-        "nikic/php-parser": "0.9.*@dev"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ronald Chaplin",
-            "email": "ron.g.chaplin@gmail.com"
-        }
-    ],
+        "nikic/php-parser": "0.9.*@dev",
+		"sensio/generator-bundle": "*",
+		"symfony/console": "~2.0"
+	},
+	"require-dev": {
+		"symfony/doctrine-bridge": "~2.2",
+		"doctrine/orm": "~2.2,>=2.2.3",
+		"twig/twig": "~1.11"
+	},
+	"autoload": {
+		"psr-0" : {
+			"T73Biz\\TranslocationBundle" : "src"
+		}
+	},
+	"target-dir": "T73Biz/Bundle/TranslocationBundle",
     "minimum-stability": "dev"
 }
