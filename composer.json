@@ -13,9 +13,6 @@
     "require": {
         "nikic/php-parser": "0.9.*@dev"
 	},
-	"require-dev": {
-		"twig/twig": "~1.11"
-	},
 	"autoload": {
 		"psr-0" : {
 			"T73Biz\\TranslocationBundle" : "src"

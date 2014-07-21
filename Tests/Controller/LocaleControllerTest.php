@@ -9,8 +9,6 @@ namespace T73Biz\Bundle\TranslocationBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class TranslateControllerTest extends WebTestCase
+class LocaleControllerTest extends WebTestCase
 {
-
 }
- 
