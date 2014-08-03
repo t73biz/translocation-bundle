@@ -13,7 +13,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
  * Class LocaleListener
- * @author Ronald Chaplin <ron.g.chaplin@gmail.com>
+ * @author Ronald Chaplin <rchaplin@t73.biz>
  */
 class LocaleListener implements EventSubscriberInterface
 {

@@ -16,7 +16,7 @@ use T73Biz\Bundle\TranslocationBundle\Extractor\TwigExtractor;
 use Symfony\Bundle\FrameworkBundle\Templating\TemplateReference;
 /**
  * Class TranslateCollector
- * @author Ronald Chaplin <ron.g.chaplin@gmail.com>
+ * @author Ronald Chaplin <rchaplin@t73.biz>
  */
 class TranslateCollector extends DataCollector
 {
