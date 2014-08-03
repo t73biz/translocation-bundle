@@ -6,14 +6,35 @@
 
     <parameters>
         <parameter key="t73_biz_translocation.supported_locales" />
+        <parameter key="t73_biz_translocation.extractor.twig.class">T73Biz\Bundle\TranslocationBundle\Extractor\TwigExtractor</parameter>
     </parameters>
-<!--
     <services>
-        <service id="t73_biz_translocation.example" class="%t73_biz_translocation.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="t73_biz_translocation.data_collector.locale" class="T73Biz\Bundle\TranslocationBundle\Collector\LocaleCollector" public="false">
+            <tag name="data_collector" template="T73BizTranslocationBundle:Collector:locale.html.twig" id="locale" />
+            <call method="setDisplayInWdt"><argument>%t73_biz_translocation.locale_wdt%</argument></call>
         </service>
+
+        <service id="t73_biz_translocation.data_collector.translate" class="T73Biz\Bundle\TranslocationBundle\Collector\TranslateCollector">
+            <argument type="service" id="t73_biz_translocation.extractor.twig" />
+            <argument type="service" id="service_container" />
+            <tag name="data_collector" template="T73BizTranslocationBundle:Collector:translate.html.twig" id="translate" />
+        </service>
+
+        <service id="t73_biz.twig.locale_expose_extension" class="T73Biz\Bundle\TranslocationBundle\Twig\LocaleExposeExtension">
+            <argument type="service" id="service_container" />
+            <tag name="twig.extension" />
+        </service>
+
+        <service id="t73_biz_translocation.locale_listener" class="T73Biz\Bundle\TranslocationBundle\EventListener\LocaleListener">
+            <argument>%kernel.default_locale%</argument>
+            <tag name="kernel.event_subscriber" />
+        </service>
+
+        <service id="t73_biz_translocation.extractor.twig" class="%t73_biz_translocation.extractor.twig.class%">
+            <argument type="service" id="twig" />
+            <argument>%kernel.default_locale%</argument>
+            <tag name="t73_biz_translocation.extractor" alias="t73_biz_translocation_extractor_twig" />
+        </service>
+
     </services>
--->
 </container>

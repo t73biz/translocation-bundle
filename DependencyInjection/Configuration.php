@@ -17,18 +17,6 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
  */
 class Configuration implements ConfigurationInterface
 {
-	private $debug;
-
-	/**
-	 * Constructor
-	 *
-	 * @param Boolean $debug Whether to use the debug mode
-	 */
-	public function  __construct($debug)
-	{
-		$this->debug = (Boolean) $debug;
-	}
-
     /**
      * {@inheritDoc}
      */
@@ -39,15 +27,10 @@ class Configuration implements ConfigurationInterface
 
 		$rootNode
 			->children()
-				->arrayNode('template')
-					->children()
-						->scalarNode('base')->defaultValue('base.html.twig')->end()
-					->end()
-				->end()
 				->arrayNode('supported_locales')
 					->prototype('scalar')->end()
 				->end()
-
+                ->scalarNode('locale_wdt')->defaultFalse()->end()
 			->end();
 
         return $treeBuilder;
