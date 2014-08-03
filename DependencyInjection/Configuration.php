@@ -13,7 +13,7 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 /**
  * This is the class that validates and merges configuration from your app/config files
  *
- * @author Ronald Chaplin <ron.g.chaplin@gmail.com>
+ * @author Ronald Chaplin <rchaplin@t73.biz>
  */
 class Configuration implements ConfigurationInterface
 {

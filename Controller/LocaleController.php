@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Class LocaleController
  * @Route("/locale")
- * @author Ronald Chaplin <ron.g.chaplin@gmail.com>
+ * @author Ronald Chaplin <rchaplin@t73.biz>
  */
 class LocaleController extends Controller
 {

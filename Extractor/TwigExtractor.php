@@ -19,7 +19,7 @@ use Twig_TokenStream;
  *
  * @author Michel Salib <michelsalib@hotmail.com>
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Ronald Chaplin <ron.g.chaplin@gmail.com>
+ * @author Ronald Chaplin <rchaplin@t73.biz>
  */
 class TwigExtractor implements ExtractorInterface
 {
