@@ -8,3 +8,7 @@ A few areas of the Symfony2 Translate Service that seems to be lacking are:
 
 * The ability to parse smarty templates
 * The ability to use browser-accepts locale
+* Decent UI reporting for translation strings
+* A flexible translation command
+
+For more information, take a look @ the [documentation](http://translocation-bundle.t73.biz)
