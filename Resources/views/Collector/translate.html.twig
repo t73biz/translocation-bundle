@@ -2,13 +2,15 @@
 
 {% block toolbar %}
     {% set icon %}
-        <img width="16" height="28" alt="Translate" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAANsAAADWEB5UatpAAABD5JREFUWIXFlk1oXFUUx///O+8lNTGktFm0SWyiJu0wMhnnjhTRZpMu7KYGXVgFdRGtiOhCtCKWiqB1YQQl4EKKSpUu6ge2XUiLIllUF5V5M5NImkkQGk0sGg2RGjJJZs5xkZcymcxLM+mABx7MPfd8/O6Zcz9orX0AwAkArSSJTYiqCskfATySTCavVuJrAJwgedtmkwMASQNgn4gcrdTXAdAKAKr6DYDBTTI8R7KdZGvFAEUrH/Q8r7/UIJFI7BKRuwFgYWHh/MjIyGKpjbW2F0B7pcmB5Qpcl0gkUiMiDcU6Eek1xgwAgOM4e8Lh8N/F86Ojo6vGNwVQW1t7wBhzNsjYdd2s67ql6k33DrDchP+rrKqAMSYtIn2qui0UCh1T1UFVvV4RkjsBvEWSInIBwOmqAiSTyV8BfBKPx18A0AjggKq+lk6nRwDAWvsVSaqqisjrmUzmUlUBiuQ7VV0kWWuM+bqrq6vbdd0nADzsz39cjeRAQA+kUqnLqvoqAJDc7bruT6r6DgCo6tjc3NyL1UgeCOBDvCci7/vDXSSNqs7m8/mD2Wz2WrUAgv4CRKPRPSRtibrRcZyjiUTisojs9Y9gAAgDAMm91tozG0msqpPGmONrAKLR6B2u6x4B0EeyxjdOYbkK2wE8CQDGlC3eTpK9GwHwD+DYqiixWGyr67opks+SrFHVRRF5O5fL3ZvP5yMickpVZSMJNiKqet+qCuRyuUJ9fX1OVesAfLm0tPTG8PBw1p/+E8Dj1toGAA9WA4CkWQWQzWavdXR0dDqO47qu2zg8PHylHPh6QVV1jGS//3s/yUfXhbDWFvwOvwJgqmjuLn88W+IT9nshCOCI53nvAkAikbhTVcfXe2s4/ktmH8l2rL1St65HXyZ5nuSplXEymfwlHo9fJNkd5BNqbm4+LyJbAFwFMK6qUyRvLwo6BeAHACMAsiQbATSUD4cLnud9CACRSGTH9PT0vy0tLSGs0zOO/4Z7fkURDoe319fX/1US9KmVgbX2TNBWU9WTAJBIJKyqPgTgGIAvVHWA5C3lfKp2Havq7MzMzFkAEJHHABwCgGQy+Q+AwMNpMwA1AfrPJyYmcgBI8hDJzng8fo8P92lQsDUn4fz8/FxdXV0WQKevut9a+1GRSbRcIBFZKf8OETmnqjDGbAOAVCr1rbX2d5LNpX5lt0csFmsJhULfk9wdRF4sqjrued66tvF4vN8Y83KpvuxllMlkpmKxWM9GIYpK7FhrPyiOKyID6XQ6UygUThpjXkLJogN7IJPJTBUKhR5VHbtBcgHwGQBYa/eTfIZk38pnjHkaAIaGhn4GkCr1v+GLtq2tbUtTU9OtRSs6bYzpKTLxROQQAJB8s/ToVdU/RKSbpJI8TPKVigBKxVp7juTBSv2CZDPbsJrXsVYMoKqT1QIAMFkxgDHmOICLN/Mw0WX5DcDh/wCMfLleNbHozwAAAABJRU5ErkJggg==" />
+    <img width="16" height="28" alt="Translate"
+         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAANsAAADWEB5UatpAAABD5JREFUWIXFlk1oXFUUx///O+8lNTGktFm0SWyiJu0wMhnnjhTRZpMu7KYGXVgFdRGtiOhCtCKWiqB1YQQl4EKKSpUu6ge2XUiLIllUF5V5M5NImkkQGk0sGg2RGjJJZs5xkZcymcxLM+mABx7MPfd8/O6Zcz9orX0AwAkArSSJTYiqCskfATySTCavVuJrAJwgedtmkwMASQNgn4gcrdTXAdAKAKr6DYDBTTI8R7KdZGvFAEUrH/Q8r7/UIJFI7BKRuwFgYWHh/MjIyGKpjbW2F0B7pcmB5Qpcl0gkUiMiDcU6Eek1xgwAgOM4e8Lh8N/F86Ojo6vGNwVQW1t7wBhzNsjYdd2s67ql6k33DrDchP+rrKqAMSYtIn2qui0UCh1T1UFVvV4RkjsBvEWSInIBwOmqAiSTyV8BfBKPx18A0AjggKq+lk6nRwDAWvsVSaqqisjrmUzmUlUBiuQ7VV0kWWuM+bqrq6vbdd0nADzsz39cjeRAQA+kUqnLqvoqAJDc7bruT6r6DgCo6tjc3NyL1UgeCOBDvCci7/vDXSSNqs7m8/mD2Wz2WrUAgv4CRKPRPSRtibrRcZyjiUTisojs9Y9gAAgDAMm91tozG0msqpPGmONrAKLR6B2u6x4B0EeyxjdOYbkK2wE8CQDGlC3eTpK9GwHwD+DYqiixWGyr67opks+SrFHVRRF5O5fL3ZvP5yMickpVZSMJNiKqet+qCuRyuUJ9fX1OVesAfLm0tPTG8PBw1p/+E8Dj1toGAA9WA4CkWQWQzWavdXR0dDqO47qu2zg8PHylHPh6QVV1jGS//3s/yUfXhbDWFvwOvwJgqmjuLn88W+IT9nshCOCI53nvAkAikbhTVcfXe2s4/ktmH8l2rL1St65HXyZ5nuSplXEymfwlHo9fJNkd5BNqbm4+LyJbAFwFMK6qUyRvLwo6BeAHACMAsiQbATSUD4cLnud9CACRSGTH9PT0vy0tLSGs0zOO/4Z7fkURDoe319fX/1US9KmVgbX2TNBWU9WTAJBIJKyqPgTgGIAvVHWA5C3lfKp2Havq7MzMzFkAEJHHABwCgGQy+Q+AwMNpMwA1AfrPJyYmcgBI8hDJzng8fo8P92lQsDUn4fz8/FxdXV0WQKevut9a+1GRSbRcIBFZKf8OETmnqjDGbAOAVCr1rbX2d5LNpX5lt0csFmsJhULfk9wdRF4sqjrued66tvF4vN8Y83KpvuxllMlkpmKxWM9GIYpK7FhrPyiOKyID6XQ6UygUThpjXkLJogN7IJPJTBUKhR5VHbtBcgHwGQBYa/eTfIZk38pnjHkaAIaGhn4GkCr1v+GLtq2tbUtTU9OtRSs6bYzpKTLxROQQAJB8s/ToVdU/RKSbpJI8TPKVigBKxVp7juTBSv2CZDPbsJrXsVYMoKqT1QIAMFkxgDHmOICLN/Mw0WX5DcDh/wCMfLleNbHozwAAAABJRU5ErkJggg=="/>
     {% endset %}
     {% set text %}
-        <div class="sf-toolbar-info-piece">
-            <b>Translate</b>
-            <p>Domains:{{ collector.messages|length }}</p>
-        </div>
+    <div class="sf-toolbar-info-piece">
+        <b>Translate</b>
+
+        <p>Domains:{{ collector.messages|length }}</p>
+    </div>
     {% endset %}
     {% include '@WebProfiler/Profiler/toolbar_item.html.twig' with { 'link': profiler_url } %}
 {% endblock %}
@@ -16,40 +18,90 @@
 {% block head %}
     {{ parent() }}
     {% stylesheets
-        'bundles/t73biztranslocation/css/jquery-ui.min.css'
-        'bundles/t73biztranslocation/css/shCoreDefault.css'
-        'bundles/t73biztranslocation/css/translate.css'
-        output='css/translate.css' filter='cssrewrite'
-    %}
-        <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="all" />
+    'bundles/t73biztranslocation/css/jquery-ui.min.css'
+    'bundles/t73biztranslocation/css/shCoreDefault.css'
+    'bundles/t73biztranslocation/css/translate.css'
+    output='css/translate.css' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="all"/>
     {% endstylesheets %}
     <style>
-        .ui-tabs-vertical { width: 100%; border: 0 black solid; }
-        #main-tabs { border: 0 solid black; width: 100% }
-        #main-tabs .ui-tabs-nav { border-bottom-left-radius: 0; border-bottom-right-radius: 0; z-index: 100;}
-        .ui-tabs-vertical .ui-tabs-nav { border-top-right-radius: 0; padding: .2em .1em .2em .2em; float: left; width: 6em; z-index: 100;}
-        .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
-        .ui-tabs-vertical .ui-tabs-nav li a { display:block; width: 68%; }
-        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
-        .ui-tabs-vertical .ui-tabs-panel { border: 1px darkgrey solid; float: left; margin-left: -1px; padding: 1em; width: 70%; z-index: 1;}
-        #main-tabs .ui-tabs-panel { border: 1px darkgrey solid; margin-top: -1px; padding: 1em; z-index: 1;}
-        h5 { padding-bottom: .5em; }
+        .ui-tabs-vertical {
+            width: 100%;
+            border: 0 black solid;
+        }
+
+        #main-tabs {
+            border: 0 solid black;
+            width: 100%
+        }
+
+        #main-tabs .ui-tabs-nav {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            z-index: 100;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav {
+            border-top-right-radius: 0;
+            padding: .2em .1em .2em .2em;
+            float: left;
+            width: 6em;
+            z-index: 100;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li {
+            clear: left;
+            width: 100%;
+            border-bottom-width: 1px !important;
+            border-right-width: 0 !important;
+            margin: 0 -1px .2em 0;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li a {
+            display: block;
+            width: 68%;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+            padding-bottom: 0;
+            padding-right: .1em;
+            border-right-width: 1px;
+        }
+
+        .ui-tabs-vertical .ui-tabs-panel {
+            border: 1px darkgrey solid;
+            float: left;
+            margin-left: -1px;
+            padding: 1em;
+            width: 70%;
+            z-index: 1;
+        }
+
+        #main-tabs .ui-tabs-panel {
+            border: 1px darkgrey solid;
+            margin-top: -1px;
+            padding: 1em;
+            z-index: 1;
+        }
+
+        h5 {
+            padding-bottom: .5em;
+        }
     </style>
 
     {% javascripts
-        '@T73BizTranslocationBundle/Resources/public/js/jquery.min.js'
-        '@T73BizTranslocationBundle/Resources/public/js/jquery-ui.min.js'
-        '@T73BizTranslocationBundle/Resources/public/js/shCore.js'
-        '@T73BizTranslocationBundle/Resources/public/js/shBrushTwig.js'
-    %}
-        <script src="{{ asset_url }}"></script>
+    '@T73BizTranslocationBundle/Resources/public/js/jquery.min.js'
+    '@T73BizTranslocationBundle/Resources/public/js/jquery-ui.min.js'
+    '@T73BizTranslocationBundle/Resources/public/js/shCore.js'
+    '@T73BizTranslocationBundle/Resources/public/js/shBrushTwig.js' %}
+    <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
     <script>
-        $(function() {
-            $( "#main-tabs" ).tabs();
-            $( "#domain-tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-            $( "#domain-tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-            $( "#filesAccordion" ).accordion({collapsible: true, heightStyle: "content"});
+        $(function () {
+            $("#main-tabs").tabs();
+            $("#domain-tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+            $("#domain-tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
+            $("#filesAccordion").accordion({collapsible: true, heightStyle: "content"});
         });
         SyntaxHighlighter.all();
     </script>
@@ -58,7 +110,8 @@
 {% block menu %}
     <span class="label">
         <span class="icon">
-            <img alt="Translate" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAANsAAADWEB5UatpAAABD5JREFUWIXFlk1oXFUUx///O+8lNTGktFm0SWyiJu0wMhnnjhTRZpMu7KYGXVgFdRGtiOhCtCKWiqB1YQQl4EKKSpUu6ge2XUiLIllUF5V5M5NImkkQGk0sGg2RGjJJZs5xkZcymcxLM+mABx7MPfd8/O6Zcz9orX0AwAkArSSJTYiqCskfATySTCavVuJrAJwgedtmkwMASQNgn4gcrdTXAdAKAKr6DYDBTTI8R7KdZGvFAEUrH/Q8r7/UIJFI7BKRuwFgYWHh/MjIyGKpjbW2F0B7pcmB5Qpcl0gkUiMiDcU6Eek1xgwAgOM4e8Lh8N/F86Ojo6vGNwVQW1t7wBhzNsjYdd2s67ql6k33DrDchP+rrKqAMSYtIn2qui0UCh1T1UFVvV4RkjsBvEWSInIBwOmqAiSTyV8BfBKPx18A0AjggKq+lk6nRwDAWvsVSaqqisjrmUzmUlUBiuQ7VV0kWWuM+bqrq6vbdd0nADzsz39cjeRAQA+kUqnLqvoqAJDc7bruT6r6DgCo6tjc3NyL1UgeCOBDvCci7/vDXSSNqs7m8/mD2Wz2WrUAgv4CRKPRPSRtibrRcZyjiUTisojs9Y9gAAgDAMm91tozG0msqpPGmONrAKLR6B2u6x4B0EeyxjdOYbkK2wE8CQDGlC3eTpK9GwHwD+DYqiixWGyr67opks+SrFHVRRF5O5fL3ZvP5yMickpVZSMJNiKqet+qCuRyuUJ9fX1OVesAfLm0tPTG8PBw1p/+E8Dj1toGAA9WA4CkWQWQzWavdXR0dDqO47qu2zg8PHylHPh6QVV1jGS//3s/yUfXhbDWFvwOvwJgqmjuLn88W+IT9nshCOCI53nvAkAikbhTVcfXe2s4/ktmH8l2rL1St65HXyZ5nuSplXEymfwlHo9fJNkd5BNqbm4+LyJbAFwFMK6qUyRvLwo6BeAHACMAsiQbATSUD4cLnud9CACRSGTH9PT0vy0tLSGs0zOO/4Z7fkURDoe319fX/1US9KmVgbX2TNBWU9WTAJBIJKyqPgTgGIAvVHWA5C3lfKp2Havq7MzMzFkAEJHHABwCgGQy+Q+AwMNpMwA1AfrPJyYmcgBI8hDJzng8fo8P92lQsDUn4fz8/FxdXV0WQKevut9a+1GRSbRcIBFZKf8OETmnqjDGbAOAVCr1rbX2d5LNpX5lt0csFmsJhULfk9wdRF4sqjrued66tvF4vN8Y83KpvuxllMlkpmKxWM9GIYpK7FhrPyiOKyID6XQ6UygUThpjXkLJogN7IJPJTBUKhR5VHbtBcgHwGQBYa/eTfIZk38pnjHkaAIaGhn4GkCr1v+GLtq2tbUtTU9OtRSs6bYzpKTLxROQQAJB8s/ToVdU/RKSbpJI8TPKVigBKxVp7juTBSv2CZDPbsJrXsVYMoKqT1QIAMFkxgDHmOICLN/Mw0WX5DcDh/wCMfLleNbHozwAAAABJRU5ErkJggg==" />
+            <img alt="Translate"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAANsAAADWEB5UatpAAABD5JREFUWIXFlk1oXFUUx///O+8lNTGktFm0SWyiJu0wMhnnjhTRZpMu7KYGXVgFdRGtiOhCtCKWiqB1YQQl4EKKSpUu6ge2XUiLIllUF5V5M5NImkkQGk0sGg2RGjJJZs5xkZcymcxLM+mABx7MPfd8/O6Zcz9orX0AwAkArSSJTYiqCskfATySTCavVuJrAJwgedtmkwMASQNgn4gcrdTXAdAKAKr6DYDBTTI8R7KdZGvFAEUrH/Q8r7/UIJFI7BKRuwFgYWHh/MjIyGKpjbW2F0B7pcmB5Qpcl0gkUiMiDcU6Eek1xgwAgOM4e8Lh8N/F86Ojo6vGNwVQW1t7wBhzNsjYdd2s67ql6k33DrDchP+rrKqAMSYtIn2qui0UCh1T1UFVvV4RkjsBvEWSInIBwOmqAiSTyV8BfBKPx18A0AjggKq+lk6nRwDAWvsVSaqqisjrmUzmUlUBiuQ7VV0kWWuM+bqrq6vbdd0nADzsz39cjeRAQA+kUqnLqvoqAJDc7bruT6r6DgCo6tjc3NyL1UgeCOBDvCci7/vDXSSNqs7m8/mD2Wz2WrUAgv4CRKPRPSRtibrRcZyjiUTisojs9Y9gAAgDAMm91tozG0msqpPGmONrAKLR6B2u6x4B0EeyxjdOYbkK2wE8CQDGlC3eTpK9GwHwD+DYqiixWGyr67opks+SrFHVRRF5O5fL3ZvP5yMickpVZSMJNiKqet+qCuRyuUJ9fX1OVesAfLm0tPTG8PBw1p/+E8Dj1toGAA9WA4CkWQWQzWavdXR0dDqO47qu2zg8PHylHPh6QVV1jGS//3s/yUfXhbDWFvwOvwJgqmjuLn88W+IT9nshCOCI53nvAkAikbhTVcfXe2s4/ktmH8l2rL1St65HXyZ5nuSplXEymfwlHo9fJNkd5BNqbm4+LyJbAFwFMK6qUyRvLwo6BeAHACMAsiQbATSUD4cLnud9CACRSGTH9PT0vy0tLSGs0zOO/4Z7fkURDoe319fX/1US9KmVgbX2TNBWU9WTAJBIJKyqPgTgGIAvVHWA5C3lfKp2Havq7MzMzFkAEJHHABwCgGQy+Q+AwMNpMwA1AfrPJyYmcgBI8hDJzng8fo8P92lQsDUn4fz8/FxdXV0WQKevut9a+1GRSbRcIBFZKf8OETmnqjDGbAOAVCr1rbX2d5LNpX5lt0csFmsJhULfk9wdRF4sqjrued66tvF4vN8Y83KpvuxllMlkpmKxWM9GIYpK7FhrPyiOKyID6XQ6UygUThpjXkLJogN7IJPJTBUKhR5VHbtBcgHwGQBYa/eTfIZk38pnjHkaAIaGhn4GkCr1v+GLtq2tbUtTU9OtRSs6bYzpKTLxROQQAJB8s/ToVdU/RKSbpJI8TPKVigBKxVp7juTBSv2CZDPbsJrXsVYMoKqT1QIAMFkxgDHmOICLN/Mw0WX5DcDh/wCMfLleNbHozwAAAABJRU5ErkJggg=="/>
         </span>
         <strong>Translate</strong>
     </span>
@@ -74,6 +127,7 @@
         <div id="main-tabs-messages">
             <div id="domain-tabs">
                 <h5>Translate Messages for {{ profile.url }}</h5>
+
                 <p class="TransHeader">Domains<span>Translations</span></p>
                 <ul>
                     {% for domain, collection in collector.messages %}
@@ -115,6 +169,7 @@
 
             <div id="filesAccordion">
                 <h3>{{ collector.path }}</h3>
+
                 <div>
                     <pre class="brush: twig;">
 {{ collector.fileContent }}

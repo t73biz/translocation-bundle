@@ -4,11 +4,13 @@
 {% block toolbar %}
     {% if collector.displayInWdt %}
         {% set icon %}
-            <img width="16" height="28" alt="Locale" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAANsAAADWEB5UatpAAAApNJREFUWIW110uIjWEYB/DfYDFMKJeNlFuJXJJZYMFKYsdiSgibMXaSQsLCAgtCcmmycZJispCSW6TJJSJZiHJNsbKQJoMxY/G+h+PzzXe+M77zr3dxnvM8////fb7vOT2H2jEHJ/AC3+J5EWNzBsCXG404iZ/o6+f8jDmN9RC/lSGcPDeLNnG8BvHyOVaU+EzZbc96HDOrkQ/KYaA1Ja8PhzErniMxluRuzcFfFU/9e7ujKXlHU/KeFmHgcwpxc0pec0re52rkeR5Bb0psSM5YWm3NBl6nxDbmjL3KwV8V+/zb2l6UsCieUowl8/YVYWA8ulPIq53uWFsI2gdgoL0ocZiMHzWI/4g1haJUg4FS0eIwHT05xHtibl3QkcPA+XqJExaOtHGrHM+6LiVwKcPApXqLw3zpXejFvFrJGvqJb8HajLoZGJyI9eBZRk0JB/MYGI632IM3FfGRWCK8iBOEHaBc34dNeIf1OBMNlTEJuzERXzJMgq24nyhej724KCwg0OlP+zsr8hejLYX3fuT+C8kONAq3bsMD7MJ7XMNXYcN5hzG4i8uxbhmuVPC0CtNwBy+FvWAptscLdZcTk89xg7BY3MU67MR1fIxmp+MAvsebDsUHbEvwPI51jZiCaTE+W/iZfpjsBGGheINTkTyJsdhR8bkl3np5Glk/WBU1fi8vlQvJauHFacONHGQduIphNRg4FzVWJ78YJIxQ1hab7EAZG4SJyWOkQejas6j5uxUrMAKnc5Ak0S484/3oEibiOT4JP05NGIe5WCBM09moeaE8BY+E2T2UITRW6NDejJwRUWQqRgu37BJe4if+rOmbsQbNDcJ4dMTCrgzyUVgp/E37XzThHloacBsLCyAdCDp/ATQHEqhic0xEAAAAAElFTkSuQmCC" />
+        <img width="16" height="28" alt="Locale"
+             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAANsAAADWEB5UatpAAAApNJREFUWIW110uIjWEYB/DfYDFMKJeNlFuJXJJZYMFKYsdiSgibMXaSQsLCAgtCcmmycZJispCSW6TJJSJZiHJNsbKQJoMxY/G+h+PzzXe+M77zr3dxnvM8////fb7vOT2H2jEHJ/AC3+J5EWNzBsCXG404iZ/o6+f8jDmN9RC/lSGcPDeLNnG8BvHyOVaU+EzZbc96HDOrkQ/KYaA1Ja8PhzErniMxluRuzcFfFU/9e7ujKXlHU/KeFmHgcwpxc0pec0re52rkeR5Bb0psSM5YWm3NBl6nxDbmjL3KwV8V+/zb2l6UsCieUowl8/YVYWA8ulPIq53uWFsI2gdgoL0ocZiMHzWI/4g1haJUg4FS0eIwHT05xHtibl3QkcPA+XqJExaOtHGrHM+6LiVwKcPApXqLw3zpXejFvFrJGvqJb8HajLoZGJyI9eBZRk0JB/MYGI632IM3FfGRWCK8iBOEHaBc34dNeIf1OBMNlTEJuzERXzJMgq24nyhej724KCwg0OlP+zsr8hejLYX3fuT+C8kONAq3bsMD7MJ7XMNXYcN5hzG4i8uxbhmuVPC0CtNwBy+FvWAptscLdZcTk89xg7BY3MU67MR1fIxmp+MAvsebDsUHbEvwPI51jZiCaTE+W/iZfpjsBGGheINTkTyJsdhR8bkl3np5Glk/WBU1fi8vlQvJauHFacONHGQduIphNRg4FzVWJ78YJIxQ1hab7EAZG4SJyWOkQejas6j5uxUrMAKnc5Ak0S484/3oEibiOT4JP05NGIe5WCBM09moeaE8BY+E2T2UITRW6NDejJwRUWQqRgu37BJe4if+rOmbsQbNDcJ4dMTCrgzyUVgp/E37XzThHloacBsLCyAdCDp/ATQHEqhic0xEAAAAAElFTkSuQmCC"/>
         {% endset %}
         {% set text %}
         <div class="sf-toolbar-info-piece">
             <b>Current Locale</b>
+
             <p>{{ collector.currentlocale }}</p>
         </div>
         {% endset %}
@@ -20,7 +22,8 @@
     {% if collector.displayInWdt %}
         <span class="label">
             <span class="icon">
-                <img alt="Locale" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAANsAAADWEB5UatpAAAApNJREFUWIW110uIjWEYB/DfYDFMKJeNlFuJXJJZYMFKYsdiSgibMXaSQsLCAgtCcmmycZJispCSW6TJJSJZiHJNsbKQJoMxY/G+h+PzzXe+M77zr3dxnvM8////fb7vOT2H2jEHJ/AC3+J5EWNzBsCXG404iZ/o6+f8jDmN9RC/lSGcPDeLNnG8BvHyOVaU+EzZbc96HDOrkQ/KYaA1Ja8PhzErniMxluRuzcFfFU/9e7ujKXlHU/KeFmHgcwpxc0pec0re52rkeR5Bb0psSM5YWm3NBl6nxDbmjL3KwV8V+/zb2l6UsCieUowl8/YVYWA8ulPIq53uWFsI2gdgoL0ocZiMHzWI/4g1haJUg4FS0eIwHT05xHtibl3QkcPA+XqJExaOtHGrHM+6LiVwKcPApXqLw3zpXejFvFrJGvqJb8HajLoZGJyI9eBZRk0JB/MYGI632IM3FfGRWCK8iBOEHaBc34dNeIf1OBMNlTEJuzERXzJMgq24nyhej724KCwg0OlP+zsr8hejLYX3fuT+C8kONAq3bsMD7MJ7XMNXYcN5hzG4i8uxbhmuVPC0CtNwBy+FvWAptscLdZcTk89xg7BY3MU67MR1fIxmp+MAvsebDsUHbEvwPI51jZiCaTE+W/iZfpjsBGGheINTkTyJsdhR8bkl3np5Glk/WBU1fi8vlQvJauHFacONHGQduIphNRg4FzVWJ78YJIxQ1hab7EAZG4SJyWOkQejas6j5uxUrMAKnc5Ak0S484/3oEibiOT4JP05NGIe5WCBM09moeaE8BY+E2T2UITRW6NDejJwRUWQqRgu37BJe4if+rOmbsQbNDcJ4dMTCrgzyUVgp/E37XzThHloacBsLCyAdCDp/ATQHEqhic0xEAAAAAElFTkSuQmCC" />
+                <img alt="Locale"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAANsAAADWEB5UatpAAAApNJREFUWIW110uIjWEYB/DfYDFMKJeNlFuJXJJZYMFKYsdiSgibMXaSQsLCAgtCcmmycZJispCSW6TJJSJZiHJNsbKQJoMxY/G+h+PzzXe+M77zr3dxnvM8////fb7vOT2H2jEHJ/AC3+J5EWNzBsCXG404iZ/o6+f8jDmN9RC/lSGcPDeLNnG8BvHyOVaU+EzZbc96HDOrkQ/KYaA1Ja8PhzErniMxluRuzcFfFU/9e7ujKXlHU/KeFmHgcwpxc0pec0re52rkeR5Bb0psSM5YWm3NBl6nxDbmjL3KwV8V+/zb2l6UsCieUowl8/YVYWA8ulPIq53uWFsI2gdgoL0ocZiMHzWI/4g1haJUg4FS0eIwHT05xHtibl3QkcPA+XqJExaOtHGrHM+6LiVwKcPApXqLw3zpXejFvFrJGvqJb8HajLoZGJyI9eBZRk0JB/MYGI632IM3FfGRWCK8iBOEHaBc34dNeIf1OBMNlTEJuzERXzJMgq24nyhej724KCwg0OlP+zsr8hejLYX3fuT+C8kONAq3bsMD7MJ7XMNXYcN5hzG4i8uxbhmuVPC0CtNwBy+FvWAptscLdZcTk89xg7BY3MU67MR1fIxmp+MAvsebDsUHbEvwPI51jZiCaTE+W/iZfpjsBGGheINTkTyJsdhR8bkl3np5Glk/WBU1fi8vlQvJauHFacONHGQduIphNRg4FzVWJ78YJIxQ1hab7EAZG4SJyWOkQejas6j5uxUrMAKnc5Ak0S484/3oEibiOT4JP05NGIe5WCBM09moeaE8BY+E2T2UITRW6NDejJwRUWQqRgu37BJe4if+rOmbsQbNDcJ4dMTCrgzyUVgp/E37XzThHloacBsLCyAdCDp/ATQHEqhic0xEAAAAAElFTkSuQmCC"/>
             </span>
             <strong>Locale</strong>
         </span>
@@ -45,19 +48,23 @@
             </select>
         </p>
 
-        <h2>Browser Requested Locale {{ help.icon('Browser Requested Help', 'This is the accept-language attribute from the page request headers, converted into human readable form.') }}</h2>
+        <h2>Browser Requested
+            Locale {{ help.icon('Browser Requested Help', 'This is the accept-language attribute from the page request headers, converted into human readable form.') }}</h2>
         <p>{{ collector.requestedlocale }}</p>
 
-        <h2>Current Locale {{ help.icon('Current Page Locale', 'This is the current locale as set for the page. This will not change within the profiler. until the next page request.') }}</h2>
+        <h2>Current
+            Locale {{ help.icon('Current Page Locale', 'This is the current locale as set for the page. This will not change within the profiler. until the next page request.') }}</h2>
         <p>{{ collector.currentlocale }}</p>
 
-        <h2>Default Locale {{ help.icon('Default Config Locale', 'This is the default locale as set in the app/config.') }}</h2>
+        <h2>Default
+            Locale {{ help.icon('Default Config Locale', 'This is the default locale as set in the app/config.') }}</h2>
         <p>{{ default_locale.name }}</p>
 
-        <h2>Supported Locales {{ help.icon('Supported Locales', 'These are the supported locales as defined in the app/config.') }}</h2>
+        <h2>Supported
+            Locales {{ help.icon('Supported Locales', 'These are the supported locales as defined in the app/config.') }}</h2>
         <ul>
             {% for locale, name in supported_full_locales %}
-            <li>{{ locale }} - {{ name }}</li>
+                <li>{{ locale }} - {{ name }}</li>
             {% endfor %}
         </ul>
     {% endif %}
@@ -67,22 +74,21 @@
     {{ parent() }}
     {% if collector.displayInWdt %}
         {% javascripts
-            '@T73BizTranslocationBundle/Resources/public/js/jquery.min.js'
-            '@T73BizTranslocationBundle/Resources/public/js/switch_locale.js'
-        %}
-            <script src="{{ asset_url }}"></script>
+        '@T73BizTranslocationBundle/Resources/public/js/jquery.min.js'
+        '@T73BizTranslocationBundle/Resources/public/js/switch_locale.js' %}
+        <script src="{{ asset_url }}"></script>
         {% endjavascripts %}
         <script type="application/javascript">
             $(document).ready(
-                function()
-                {
-                    $('#switch_locale').switchLocale("{{ path('switch_locale') }}");
-                }
+                    function () {
+                        $('#switch_locale').switchLocale("{{ path('switch_locale') }}");
+                    }
             );
         </script>
     {% endif %}
 {% endblock %}
 
 {% macro icon(alt, title) %}
-    <img width="16" height="16" alt="{{ alt }}" title="{{ title }}" src="data:image/gif;base64,R0lGODlhEAAQAPcAAIiEhXNxcoaEhYWDhP/+//r4+5iWm97c4ZiXnJeWm6GgpcrI06Khp8nI0NPS4MjI0u7u+Ly8xMnJ0cjI0MXFzXBwcoWFh/7+/7y/0Li6x5GbzKChpri5vsnKzz9Zx2N1x2R3w2N1wXiL14+YwbC1y5eYnJaXm6GipqChpcjJzbi5vTFQxTlWvkJcvXOK2qqwxjpVrEFeukplvkxkrmaB2Fhvu8HK5xY7pStJnz9p2TxjzD1iykNp1kFfuT9br0lipVx5yU5jnG2H0WyEzH2Y5YucyrLD8ZijwZSeuaivwrS4xLq+yba6xcjM173AyQgyng41khE4lxQ8nBI1jxhDrBg8mhg7jyBKriRJoiNGmipQsS1TtDFZuDRcuzBSqzdfvzZevS9PpDpgwTZXqERqzUhy1kNmwEVlukNitEdouURhrVFpp1NrqWN7t2N5s15zqG1+qZSq45qr1w45lw86lhA5kxdDphY9mBY+lhxHphtBliFJoCNGlyVImitSrTZm1Dtozy9So0BszzFRnDlcrjtbpjxdpFx5vWF/xVl1tE5lm1t1sGV8soKUvI6ewLPF7aCw1JWhu7q9xMbJ0PDz+j5fop2pwbG3w7i5u7a5vrW4vdbZ3re+yLfE1LS5vf7//6Ciofv+942PhIuNgouNgLGzpbO0orS1p4uLf4yMgI2Ng4yMgoODe4KCev//+3l5d3JycIWFg////f7+/LW0oo+NgY2Lf7a0p7WzprSypoOCfXp5dXl4dHh3c4yLh7iyoo2Kg4+MhdnWz3l4dnh3dXJxb4+Mh46Lho2KhXt3dN7W03Rwb3VxcP///5eXl4WFhXFxcf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAANEALAAAAAAQABAAAAj/AC80aybrlLFhzIrt8oXr06eBAwkcAwAKk4QHmU48C0ZA1sBZuhAskUODhyAgRZSYYAVRlLNOLnIQMfIojplDL0qoImBKgBMRf8pACNXRhp9ElwTcqqUAEiAdZISkQUSpgJo9jVCs4pVpyA4xYLZQ8XJgU587a1S8qrDgzJcuWuxgsSSMER4+gzpAg5UCDZcrN544UgYnS5hAhSYF4OWpTR4pdKocSYJjjA9CbjgkQ4YiUpQ5dfSwWQSjR4wWI1AA+xVLkiIoUypRaFKDhQcQTJ7RIkDKAKcgVgxhcCBjxQcSCVYRIMgqQQQkb37MCKEhg4lWHgkSGGWBgaYJDTJtExiQKjtEV6VQEVvGrJetXMsHBgQAOw==" />
+    <img width="16" height="16" alt="{{ alt }}" title="{{ title }}"
+         src="data:image/gif;base64,R0lGODlhEAAQAPcAAIiEhXNxcoaEhYWDhP/+//r4+5iWm97c4ZiXnJeWm6GgpcrI06Khp8nI0NPS4MjI0u7u+Ly8xMnJ0cjI0MXFzXBwcoWFh/7+/7y/0Li6x5GbzKChpri5vsnKzz9Zx2N1x2R3w2N1wXiL14+YwbC1y5eYnJaXm6GipqChpcjJzbi5vTFQxTlWvkJcvXOK2qqwxjpVrEFeukplvkxkrmaB2Fhvu8HK5xY7pStJnz9p2TxjzD1iykNp1kFfuT9br0lipVx5yU5jnG2H0WyEzH2Y5YucyrLD8ZijwZSeuaivwrS4xLq+yba6xcjM173AyQgyng41khE4lxQ8nBI1jxhDrBg8mhg7jyBKriRJoiNGmipQsS1TtDFZuDRcuzBSqzdfvzZevS9PpDpgwTZXqERqzUhy1kNmwEVlukNitEdouURhrVFpp1NrqWN7t2N5s15zqG1+qZSq45qr1w45lw86lhA5kxdDphY9mBY+lhxHphtBliFJoCNGlyVImitSrTZm1Dtozy9So0BszzFRnDlcrjtbpjxdpFx5vWF/xVl1tE5lm1t1sGV8soKUvI6ewLPF7aCw1JWhu7q9xMbJ0PDz+j5fop2pwbG3w7i5u7a5vrW4vdbZ3re+yLfE1LS5vf7//6Ciofv+942PhIuNgouNgLGzpbO0orS1p4uLf4yMgI2Ng4yMgoODe4KCev//+3l5d3JycIWFg////f7+/LW0oo+NgY2Lf7a0p7WzprSypoOCfXp5dXl4dHh3c4yLh7iyoo2Kg4+MhdnWz3l4dnh3dXJxb4+Mh46Lho2KhXt3dN7W03Rwb3VxcP///5eXl4WFhXFxcf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAANEALAAAAAAQABAAAAj/AC80aybrlLFhzIrt8oXr06eBAwkcAwAKk4QHmU48C0ZA1sBZuhAskUODhyAgRZSYYAVRlLNOLnIQMfIojplDL0qoImBKgBMRf8pACNXRhp9ElwTcqqUAEiAdZISkQUSpgJo9jVCs4pVpyA4xYLZQ8XJgU587a1S8qrDgzJcuWuxgsSSMER4+gzpAg5UCDZcrN544UgYnS5hAhSYF4OWpTR4pdKocSYJjjA9CbjgkQ4YiUpQ5dfSwWQSjR4wWI1AA+xVLkiIoUypRaFKDhQcQTJ7RIkDKAKcgVgxhcCBjxQcSCVYRIMgqQQQkb37MCKEhg4lWHgkSGGWBgaYJDTJtExiQKjtEV6VQEVvGrJetXMsHBgQAOw=="/>
 {% endmacro %}

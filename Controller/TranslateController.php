@@ -8,8 +8,6 @@
 namespace T73Biz\Bundle\TranslocationBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 /**
  * Class TranslateController
@@ -17,22 +15,21 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
  */
 class TranslateController extends Controller
 {
-	/**
-	 * @Route("/")
-	 * @Template()
-	 */
-	public function indexAction()
-	{
-		return array();
-	}
+    /**
+     * @Route("/")
+     * @Template()
+     */
+    public function indexAction()
+    {
+        return array();
+    }
 
-	/**
-	 * @Route("/configure")
-	 * @Template()
-	 */
-	public function configureAction()
-	{
-		return array();
-	}
-
+    /**
+     * @Route("/configure")
+     * @Template()
+     */
+    public function configureAction()
+    {
+        return array();
+    }
 }
