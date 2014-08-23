@@ -23,15 +23,15 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('t73_biz_translocation');
+        $rootNode    = $treeBuilder->root('t73_biz_translocation');
 
-		$rootNode
-			->children()
-				->arrayNode('supported_locales')
-					->prototype('scalar')->end()
-				->end()
-                ->scalarNode('locale_wdt')->defaultFalse()->end()
-			->end();
+        $rootNode
+            ->children()
+            ->arrayNode('supported_locales')
+            ->prototype('scalar')->end()
+            ->end()
+            ->scalarNode('locale_wdt')->defaultFalse()->end()
+            ->end();
 
         return $treeBuilder;
     }

@@ -11,6 +11,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * Class T73BizTranslocationBundle
+ *
  * @author Ronald Chaplin <rchaplin@t73.biz>
  */
 class T73BizTranslocationBundle extends Bundle

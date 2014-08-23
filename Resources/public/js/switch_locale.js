@@ -4,14 +4,13 @@
  * Copyright (c) 2014 Ronald Chaplin
  */
 
-(function( $ ) {
+(function ($) {
 
-	$.fn.switchLocale = function( ajaxUrl ) {
+	$.fn.switchLocale = function (ajaxUrl) {
 
 		this.on(
 			"click",
-			function()
-			{
+			function () {
 				window.location.replace(ajaxUrl + "/" + $(this).val());
 			}
 		);
@@ -19,4 +18,4 @@
 		return this;
 	};
 
-}( jQuery ));
+}(jQuery));
