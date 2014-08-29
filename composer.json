@@ -11,8 +11,10 @@
 		}
 	],
 	"require": {
-		"nikic/php-parser": "0.9.*@dev"
-	},
+		"nikic/php-parser": "0.9.*@dev",
+        "sensio/distribution-bundle": "~3.0",
+        "sensio/framework-extra-bundle": "~3.0"
+    },
 	"autoload": {
 		"psr-0" : {
 			"T73Biz\\Bundle\\TranslocationBundle" : ""
