@@ -14,8 +14,8 @@
 		"nikic/php-parser": "0.9.*@dev"
 	},
 	"autoload": {
-		"psr-0": {
-			"T73Biz\\TranslocationBundle": "src"
+		"psr-0" : {
+			"T73Biz\\TranslocationBundle" : ""
 		}
 	},
 	"target-dir": "T73Biz/Bundle/TranslocationBundle",
