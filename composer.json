@@ -15,7 +15,7 @@
 	},
 	"autoload": {
 		"psr-0" : {
-			"T73Biz\\TranslocationBundle" : "src"
+			"T73Biz\\TranslocationBundle" : ""
 		}
 	},
 	"target-dir": "T73Biz/Bundle/TranslocationBundle",
