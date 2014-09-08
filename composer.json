@@ -12,8 +12,16 @@
 	],
 	"require": {
 		"nikic/php-parser": "0.9.*@dev",
-        "sensio/framework-extra-bundle": "~3.0"
-    },
+        "sensio/framework-extra-bundle": "~3.0",
+		"jms/di-extra-bundle": "1.4.*@dev",
+		"doctrine/doctrine-fixtures-bundle": "2.2.*@dev",
+		"liip/functional-test-bundle": "1.0.*@dev"
+	},
+	"require-dev" : {
+		"phpunit/phpunit": "4.4.*@dev",
+		"phpunit/php-code-coverage": "3.0.*@dev",
+		"phpunit/phpunit-mock-objects": "2.3.*@dev"
+	},
 	"autoload": {
 		"psr-0" : {
 			"T73Biz\\Bundle\\TranslocationBundle" : ""
@@ -21,6 +29,9 @@
 	},
 	"target-dir": "T73Biz/Bundle/TranslocationBundle",
 	"minimum-stability": "dev",
+	"config": {
+		"bin-dir": "bin"
+	},
 	"extra": {
 		"branch-alias": {
 			"dev-master": "0.3.x-dev"

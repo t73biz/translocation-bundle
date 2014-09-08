@@ -20,7 +20,7 @@ use T73Biz\Bundle\TranslocationBundle\Extractor\TwigExtractor;
  *
  * @author Ronald Chaplin <rchaplin@t73.biz>
  */
-class TranslateCollector extends DataCollector
+class TranslationCollector extends DataCollector
 {
     /**
      * @var Container $container
@@ -117,7 +117,7 @@ class TranslateCollector extends DataCollector
      */
     public function getName()
     {
-        return "translate";
+        return "translation";
     }
 
     public function getPath()
