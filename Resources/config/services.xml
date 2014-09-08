@@ -35,8 +35,6 @@
             <tag name="t73_biz_translocation.extractor" alias="t73_biz_translocation_extractor_twig"/>
         </service>
         <service id="t73_biz_translocation.extractor.php" class="%t73_biz_translocation.extractor.php.class%">
-            <argument type="service" id="php"/>
-            <argument>%kernel.default_locale%</argument>
             <tag name="t73_biz_translocation.extractor" alias="t73_biz_translocation_extractor_php"/>
         </service>
         <service id="t73_biz_translocation.service.locale_validation" class="T73Biz\Bundle\TranslocationBundle\Service\LocaleValidationService">
