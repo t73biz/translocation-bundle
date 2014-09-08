@@ -1,9 +1,0 @@
-imports:
-    - { resource: %kernel.root_dir%/config/config_dev.yml }
-
-assetic:
-    debug:          "%kernel.debug%"
-    use_controller: true
-    bundles:        [ ]
-    filters:
-        cssrewrite: ~
