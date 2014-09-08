@@ -6,6 +6,7 @@
     <parameters>
         <parameter key="t73_biz_translocation.supported_locales"/>
         <parameter key="t73_biz_translocation.extractor.twig.class">T73Biz\Bundle\TranslocationBundle\Extractor\TwigExtractor</parameter>
+        <parameter key="t73_biz_translocation.extractor.php.class">T73Biz\Bundle\TranslocationBundle\Extractor\PhpExtractor</parameter>
     </parameters>
     <services>
         <service id="t73_biz_translocation.data_collector.locale" class="T73Biz\Bundle\TranslocationBundle\Collector\LocaleCollector" public="false">
@@ -32,6 +33,11 @@
             <argument type="service" id="twig"/>
             <argument>%kernel.default_locale%</argument>
             <tag name="t73_biz_translocation.extractor" alias="t73_biz_translocation_extractor_twig"/>
+        </service>
+        <service id="t73_biz_translocation.extractor.php" class="%t73_biz_translocation.extractor.php.class%">
+            <argument type="service" id="php"/>
+            <argument>%kernel.default_locale%</argument>
+            <tag name="t73_biz_translocation.extractor" alias="t73_biz_translocation_extractor_php"/>
         </service>
         <service id="t73_biz_translocation.service.locale_validation" class="T73Biz\Bundle\TranslocationBundle\Service\LocaleValidationService">
             <argument type="service" id="service_container"/>
