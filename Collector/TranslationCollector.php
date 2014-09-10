@@ -20,7 +20,7 @@ use T73Biz\Bundle\TranslocationBundle\Extractor\TwigExtractor;
  *
  * @author Ronald Chaplin <rchaplin@t73.biz>
  */
-class TranslationCollector extends DataCollector
+class TranslateCollector extends DataCollector
 {
     /**
      * @var Container $container
@@ -54,16 +54,30 @@ class TranslationCollector extends DataCollector
      */
     public function collect(Request $request, Response $response, \Exception $exception = null)
     {
-        $template    = $request->attributes->get('_template');
         $messages    = array();
         $content     = $response->getContent();
         $path        = '';
         $fileContent = '';
+        $template    = $request->attributes->get('_template');
+
+        if(is_null($template)) {
+            $templateName = $request->attributes->get('template');
+            list($front, $format, $engine) = explode('.', $templateName);
+            $templateParts = explode(":", $front);
+            $template = new TemplateReference(
+                $templateParts[0],
+                $templateParts[1],
+                $templateParts[2],
+                $format,
+                $engine
+            );
+        }
+
         if ($template instanceof TemplateReference) {
             $locale    = $request->attributes->get('_locale', $request->getLocale());
             $catalogue = new MessageCatalogue($locale);
-
             $path = $template->getPath();
+
             /**
              * Check if $path is a resource
              */
@@ -117,9 +131,12 @@ class TranslationCollector extends DataCollector
      */
     public function getName()
     {
-        return "translation";
+        return "translate";
     }
 
+    /**
+     * @return mixed
+     */
     public function getPath()
     {
         return $this->data['path'];
