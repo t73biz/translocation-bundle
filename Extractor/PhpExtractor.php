@@ -59,6 +59,10 @@ class PhpExtractor implements ExtractorInterface
      */
     public function extract($directory, MessageCatalogue $catalogue)
     {
+        $vendorDir = __DIR__ . '/../vendor';
+        if (!@require $vendorDir . '/nikic/php-parser/lib/bootstrap.php') {
+            die("We could not find the PHP Parser Bootstrap");
+        }
         $this->catalogue = $catalogue;
         $this->findPhpFiles($directory);
         $this->parseFiles();
