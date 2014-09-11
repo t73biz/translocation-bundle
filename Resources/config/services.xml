@@ -15,11 +15,10 @@
                 <argument>%t73_biz_translocation.locale_wdt%</argument>
             </call>
         </service>
-        <service id="t73_biz_translocation.data_collector.translation" class="T73Biz\Bundle\TranslocationBundle\Collector\TranslationCollector">
+        <service id="t73_biz_translocation.data_collector.translation" class="T73Biz\Bundle\TranslocationBundle\Collector\TranslateCollector">
             <argument type="service" id="t73_biz_translocation.extractor.twig"/>
             <argument type="service" id="service_container"/>
-            <tag name="data_collector" template="T73BizTranslocationBundle:Collector:translation.html.twig"
-                 id="translation"/>
+            <tag name="data_collector" template="T73BizTranslocationBundle:Collector:translate.html.twig" id="translate"/>
         </service>
         <service id="t73_biz.twig.locale_expose_extension" class="T73Biz\Bundle\TranslocationBundle\Twig\LocaleExposeExtension">
             <argument type="service" id="service_container"/>
