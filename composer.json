@@ -11,9 +11,10 @@
 		}
 	],
 	"require": {
-		"nikic/php-parser": "0.9.*@dev",
+		"nikic/php-parser": "1.0.0-beta2",
         "sensio/framework-extra-bundle": "~3.0",
-		"jms/di-extra-bundle": "1.4.*@dev"
+		"jms/di-extra-bundle": "1.4.*@dev",
+		"symfony/validator": "2.6.*@dev"
 	},
 	"require-dev" : {
 		"phpunit/phpunit": "4.4.*@dev",
