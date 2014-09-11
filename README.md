@@ -12,3 +12,6 @@ A few areas of the Symfony2 Translate Service that seems to be lacking are:
 * A flexible translation command
 
 For more information, take a look @ the [documentation](http://translocation-bundle.t73.biz)
+
+### Status
+[![Build Status](https://travis-ci.org/t73biz/translocation-bundle.png)](https://travis-ci.org/t73biz/translocation-bundle)
