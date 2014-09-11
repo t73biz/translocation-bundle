@@ -60,7 +60,7 @@ class TranslateCollector extends DataCollector
         $fileContent = '';
         $template    = $request->attributes->get('_template');
 
-        if(is_null($template)) {
+        if (is_null($template)) {
             $templateName = $request->attributes->get('template');
             list($front, $format, $engine) = explode('.', $templateName);
             $templateParts = explode(":", $front);
