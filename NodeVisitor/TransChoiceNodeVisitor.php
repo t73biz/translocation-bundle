@@ -28,6 +28,17 @@ class TransChoiceNodeVisitor extends TranslationNodeVisitorAbstract
      */
     public function leaveNode(Node $node)
     {
-        parent::leaveNode($node, 0, 3);
+        if ($node instanceof Expr\MethodCall && $node->name == 'transChoice') {
+            $set = array();
+            if (isset($node->args[0]) && $node->args[0]->value instanceof Scalar\String) {
+                $set['key'] = $node->args[0]->value->value;
+            }
+            if (isset($node->args[3]) && $node->args[3]->value instanceof Scalar\String) {
+                $set['domain'] = $node->args[3]->value->value;
+            } else {
+                $set['domain'] = 'messages';
+            }
+            $this->matches[] = $set;
+        }
     }
 }

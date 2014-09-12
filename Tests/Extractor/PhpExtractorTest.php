@@ -58,27 +58,16 @@ class PhpExtractorTest extends \PHPUnit_Framework_TestCase
      */
     public function testClassHasProperSetup()
     {
-        $this->assertTrue(property_exists($this->phpExtractor, 'files'));
         $this->assertTrue(property_exists($this->phpExtractor, 'catalogue'));
         $this->assertTrue(property_exists($this->phpExtractor, 'prefix'));
-        $this->assertTrue(property_exists($this->phpExtractor, 'messages'));
     }
 
     /**
      * @expectedException InvalidArgumentException
      */
-    public function testFindPhpFilesException()
+    public function testParseFilesException()
     {
-        $this->phpExtractor->findPhpFiles($this->badDirectory, $this->messageCatalogue);
-    }
-
-    /**
-     * Test file finding functionality
-     */
-    public function testFilesFound()
-    {
-        $this->phpExtractor->findPhpFiles($this->goodDirectory);
-        $this->assertAttributeNotEmpty('files', $this->phpExtractor);
+        $this->phpExtractor->extract($this->badDirectory, $this->messageCatalogue);
     }
 
     /**
@@ -86,8 +75,6 @@ class PhpExtractorTest extends \PHPUnit_Framework_TestCase
      */
     public function testParseFiles()
     {
-        $this->phpExtractor->findPhpFiles($this->goodDirectory);
-        $this->phpExtractor->parseFiles();
-        $this->assertAttributeNotEmpty('messages', $this->phpExtractor);
+        $this->phpExtractor->extract($this->goodDirectory, $this->messageCatalogue);
     }
 }

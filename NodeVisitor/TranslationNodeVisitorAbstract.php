@@ -23,19 +23,33 @@ class TranslationNodeVisitorAbstract implements NodeVisitor
      */
     protected $matches = array();
 
+    /**
+     * @param array $nodes
+     * @return null|\PhpParser\Node[]
+     */
     public function beforeTraverse(array $nodes)
     {
         return null;
     }
 
+    /**
+     * @param Node $node
+     * @return null|Node
+     */
     public function enterNode(Node $node)
     {
         return null;
     }
 
+    /**
+     * @param Node $node
+     * @param int  $keyIndex
+     * @param int  $domainIndex
+     * @return false|null|Node|\PhpParser\Node[]|void
+     */
     public function leaveNode(Node $node, $keyIndex = 0, $domainIndex = 2)
     {
-        if ($node instanceof Expr\MethodCall && $node->name == 'transChoice') {
+        if ($node instanceof Expr\MethodCall && $node->name == 'trans') {
             $set = array();
             if (isset($node->args[$keyIndex]) && $node->args[$keyIndex]->value instanceof Scalar\String) {
                 $set['key'] = $node->args[$keyIndex]->value->value;
@@ -49,6 +63,10 @@ class TranslationNodeVisitorAbstract implements NodeVisitor
         }
     }
 
+    /**
+     * @param array $nodes
+     * @return null|\PhpParser\Node[]
+     */
     public function afterTraverse(array $nodes)
     {
         return null;

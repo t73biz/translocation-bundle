@@ -31,6 +31,7 @@ class Configuration implements ConfigurationInterface
             ->prototype('scalar')->end()
             ->end()
             ->scalarNode('locale_wdt')->defaultFalse()->end()
+            ->scalarNode('php_extractor')->defaultTrue()->end()
             ->end();
 
         return $treeBuilder;
