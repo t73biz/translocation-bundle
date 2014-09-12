@@ -9,6 +9,8 @@ namespace T73Biz\Bundle\TranslocationBundle\NodeVisitor;
 
 use T73Biz\Bundle\TranslocationBundle\NodeVisitor\TranslationNodeVisitorAbstract;
 use PhpParser\Node;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Scalar;
 
 /**
  * Class TransNodeVisitor
@@ -26,6 +28,17 @@ class TransNodeVisitor extends TranslationNodeVisitorAbstract
      */
     public function leaveNode(Node $node)
     {
-        parent::leaveNode($node, 0, 2);
+        if ($node instanceof Expr\MethodCall && $node->name == 'trans') {
+            $set = array();
+            if (isset($node->args[0]) && $node->args[0]->value instanceof Scalar\String) {
+                $set['key'] = $node->args[0]->value->value;
+            }
+            if (isset($node->args[2]) && $node->args[2]->value instanceof Scalar\String) {
+                $set['domain'] = $node->args[2]->value->value;
+            } else {
+                $set['domain'] = 'messages';
+            }
+            $this->matches[] = $set;
+        }
     }
 }

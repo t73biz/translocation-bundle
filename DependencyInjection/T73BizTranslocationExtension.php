@@ -50,5 +50,9 @@ class T73BizTranslocationExtension extends Extension
         } else {
             $container->setParameter('t73_biz_translocation.locale_wdt', $config['locale_wdt']);
         }
+
+        if ($config['php_extractor'] === true) {
+            $loader->load('php_extractor.xml');
+        }
     }
 }
