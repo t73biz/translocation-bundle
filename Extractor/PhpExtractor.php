@@ -16,7 +16,7 @@ use PhpParser\Parser;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Translation\MessageCatalogue;
 use Symfony\Component\Translation\Extractor\ExtractorInterface;
-use Symfony\Component\Validator\Exception\InvalidArgumentException;
+use Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 use T73Biz\Bundle\TranslocationBundle\NodeVisitor\TransNodeVisitor;
 use T73Biz\Bundle\TranslocationBundle\NodeVisitor\TransChoiceNodeVisitor;
 
